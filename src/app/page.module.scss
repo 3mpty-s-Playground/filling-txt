@@ -1,0 +1,35 @@
+.main {
+    width: 100%;
+    // Hauteur scrollable
+    height: 300vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252422;
+
+    .text {
+        position: fixed;
+        top: 60px;
+
+        h1 {
+            font-size: 25vw;
+            text-transform: uppercase;
+            line-height: 100%;
+            color: transparent;
+            background: linear-gradient(
+                to right,
+                #eb5e28 0%,
+                #eb5e28 50%,
+                #fffcf225 50%
+            );
+            // Double largeur pour animer horizontalement
+            background-size: 200% 100%;
+            // Départ à droite (= texte vide)
+            background-position: 100% 0%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
